@@ -291,7 +291,7 @@ void HAL_TIM_PeriodElapsedCallback(TIM_HandleTypeDef *htim){
 	if(timer2_flag == 1)
 	{
 		timer2_flag=0;
-		setTimer2(50);
+		setTimer2(25);
 		update7SEG((index_led++)<4?index_led:0);
 	}
 }
